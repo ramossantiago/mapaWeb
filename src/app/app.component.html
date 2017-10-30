@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+	<div class="container" id="container">
+		<div id="map-container" class="map-container"></div>
+		<div style="height: 20px; position: relative">
+      <input type="button" (click)="centrarMapaEnUbicacionActual()" value="Encuentrame"/>
+      <p>Ingresa distancia</p>
+      <input [(ngModel)] = "distanciaBusqueda" placeholder="Ingrese distancia" />
+      <input type="button" (click)="buscarUbicaciones()" value="Buscar localidades"/>
+      <input type="button" (click)="borrarUbicaciones()" value="Borrar localidades"/>
+      <input type="button" (click)="borrarMarcaUbicacionActual()" value="Borrar ubicacion actual"/>
+      <input type="button" (click)="print()" value="Imprimir ubicacion actual"/>distanciaBusqueda
+		</div>
+	</div>
+
